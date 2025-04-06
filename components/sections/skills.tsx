@@ -2,53 +2,9 @@
 
 import { useEffect, useRef } from 'react'
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 
-const skillCategories = [
-  {
-    title: "Frontend",
-    skills: [
-      { name: "HTML", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg" },
-      { name: "CSS", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg" },
-      { name: "JavaScript", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg" },
-      { name: "React Native", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg" },
-      { name: "ReactJS", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Light.svg" },
-      { name: "Astro", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Astro.svg" },
-      { name: "TailwindCSS", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TailwindCSS-Dark.svg" },
-      { name: "Bootstrap", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Bootstrap.svg" },
-      { name: "Vue.js", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/VueJS-Dark.svg" }
-    ]
-  },
-  {
-    title: "Backend",
-    skills: [
-      { name: "Slim PHP", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PHP-Dark.svg" },
-      { name: "Express", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/ExpressJS-Dark.svg" },
-      { name: "Laravel", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Laravel-Dark.svg" },
-      { name: "MySQL", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MySQL-Dark.svg" },
-      { name: "MongoDB", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MongoDB.svg" },
-      { name: "Node.js", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NodeJS-Dark.svg" },
-      { name: "Sprint", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Spring-Dark.svg" },
-      { name: "FastAPI", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/FastAPI.svg" },
-      { name: "PostgreSQL", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PostgreSQL-Dark.svg" }
-    ]
-  },
-  {
-    title: "Herramientas",
-    skills: [
-      { name: "Git", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg" },
-      { name: "GitHub", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" },
-      { name: "NPM", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" },
-      { name: "Ubuntu", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Ubuntu-Dark.svg" },
-      { name: "Postman", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" },
-      { name: "Yarn", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Yarn-Dark.svg" },
-      { name: "Expo", icon: "https://seeklogo.com/images/E/expo-logo-01BB2BCFC3-seeklogo.com.png" },
-      { name: "VS Code", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/VSCode-Dark.svg" },
-      { name: "Android Studio", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/AndroidStudio-Dark.svg" }
-    ]
-  }
-]
-
-function InfiniteCarousel({ skills }: { skills: typeof skillCategories[0]['skills'] }) {
+function InfiniteCarousel({ skills }: { skills: { name: string; icon: string }[] }) {
   const scrollerRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -99,6 +55,53 @@ function InfiniteCarousel({ skills }: { skills: typeof skillCategories[0]['skill
 }
 
 export function Skills() {
+  const { t } = useTranslation()
+
+  const skillCategories = [
+    {
+      title: t('skills.frontend.title'),
+      skills: [
+        { name: t('skills.frontend.html'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg" },
+        { name: t('skills.frontend.css'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg" },
+        { name: t('skills.frontend.javascript'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg" },
+        { name: t('skills.frontend.reactNative'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg" },
+        { name: t('skills.frontend.reactJS'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Light.svg" },
+        { name: t('skills.frontend.astro'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Astro.svg" },
+        { name: t('skills.frontend.tailwindCSS'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TailwindCSS-Dark.svg" },
+        { name: t('skills.frontend.bootstrap'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Bootstrap.svg" },
+        { name: t('skills.frontend.vue'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/VueJS-Dark.svg" }
+      ]
+    },
+    {
+      title: t('skills.backend.title'),
+      skills: [
+        { name: t('skills.backend.slimPHP'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PHP-Dark.svg" },
+        { name: t('skills.backend.express'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/ExpressJS-Dark.svg" },
+        { name: t('skills.backend.laravel'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Laravel-Dark.svg" },
+        { name: t('skills.backend.mySQL'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MySQL-Dark.svg" },
+        { name: t('skills.backend.mongoDB'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MongoDB.svg" },
+        { name: t('skills.backend.nodeJS'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NodeJS-Dark.svg" },
+        { name: t('skills.backend.spring'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Spring-Dark.svg" },
+        { name: t('skills.backend.fastAPI'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/FastAPI.svg" },
+        { name: t('skills.backend.postgreSQL'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PostgreSQL-Dark.svg" }
+      ]
+    },
+    {
+      title: t('skills.tools.title'),
+      skills: [
+        { name: t('skills.tools.git'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg" },
+        { name: t('skills.tools.gitHub'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Github-Dark.svg" },
+        { name: t('skills.tools.npm'), icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" },
+        { name: t('skills.tools.ubuntu'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Ubuntu-Dark.svg" },
+        { name: t('skills.tools.postman'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" },
+        { name: t('skills.tools.yarn'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Yarn-Dark.svg" },
+        { name: t('skills.tools.expo'), icon: "https://seeklogo.com/images/E/expo-logo-01BB2BCFC3-seeklogo.com.png" },
+        { name: t('skills.tools.vsCode'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/VSCode-Dark.svg" },
+        { name: t('skills.tools.androidStudio'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/AndroidStudio-Dark.svg" }
+      ]
+    }
+  ]
+
   return (
     <section id="skills" className="section-padding">
       <div className="max-w-7xl mx-auto">
@@ -111,12 +114,10 @@ export function Skills() {
         >
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">
-              Tecnologías
+              {t('skills.title')}
             </h2>
             <p className="text-base lg:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Durante mi viaje en este mundo del desarrollo de software, he cultivado
-              experiencia y habilidades en una variedad de tecnologías, algunas por gusto
-              y otras por necesidad para proyectos.
+              {t('skills.description')}
             </p>
           </div>
 

@@ -46,6 +46,46 @@ i18n
               'Agile methodologies: SCRUM'
             ],
             closing: 'As a Junior Full Stack Developer, I constantly stay updated with the latest trends in software development and enjoy creating innovative technological solutions that solve real-world problems.'
+          },
+          skills: {
+            title: 'Technologies',
+            description: 'During my journey in the world of software development, I have cultivated experience and skills in a variety of technologies, some out of passion and others out of necessity for projects.',
+            frontend: {
+              title: 'Frontend',
+              html: 'HTML',
+              css: 'CSS',
+              javascript: 'JavaScript',
+              reactNative: 'React Native',
+              reactJS: 'ReactJS',
+              astro: 'Astro',
+              tailwindCSS: 'TailwindCSS',
+              bootstrap: 'Bootstrap',
+              vue: 'Vue.js'
+            },
+            backend: {
+              title: 'Backend',
+              slimPHP: 'Slim PHP',
+              express: 'Express',
+              laravel: 'Laravel',
+              mySQL: 'MySQL',
+              mongoDB: 'MongoDB',
+              nodeJS: 'Node.js',
+              spring: 'Spring',
+              fastAPI: 'FastAPI',
+              postgreSQL: 'PostgreSQL'
+            },
+            tools: {
+              title: 'Tools',
+              git: 'Git',
+              gitHub: 'GitHub',
+              npm: 'NPM',
+              ubuntu: 'Ubuntu',
+              postman: 'Postman',
+              yarn: 'Yarn',
+              expo: 'Expo',
+              vsCode: 'VS Code',
+              androidStudio: 'Android Studio'
+            }
           }
         }
       },
@@ -88,6 +128,46 @@ i18n
               'Metodologías ágiles: SCRUM'
             ],
             closing: 'Como Desarrollador Full Stack Jr., me mantengo constantemente actualizado con las últimas tendencias en desarrollo de software y disfruto creando soluciones tecnológicas innovadoras que resuelvan problemas reales.'
+          },
+          skills: {
+            title: 'Tecnologías',
+            description: 'Durante mi viaje en este mundo del desarrollo de software, he cultivado experiencia y habilidades en una variedad de tecnologías, algunas por gusto y otras por necesidad para proyectos.',
+            frontend: {
+              title: 'Frontend',
+              html: 'HTML',
+              css: 'CSS',
+              javascript: 'JavaScript',
+              reactNative: 'React Native',
+              reactJS: 'ReactJS',
+              astro: 'Astro',
+              tailwindCSS: 'TailwindCSS',
+              bootstrap: 'Bootstrap',
+              vue: 'Vue.js'
+            },
+            backend: {
+              title: 'Backend',
+              slimPHP: 'Slim PHP',
+              express: 'Express',
+              laravel: 'Laravel',
+              mySQL: 'MySQL',
+              mongoDB: 'MongoDB',
+              nodeJS: 'Node.js',
+              spring: 'Spring',
+              fastAPI: 'FastAPI',
+              postgreSQL: 'PostgreSQL'
+            },
+            tools: {
+              title: 'Herramientas',
+              git: 'Git',
+              gitHub: 'GitHub',
+              npm: 'NPM',
+              ubuntu: 'Ubuntu',
+              postman: 'Postman',
+              yarn: 'Yarn',
+              expo: 'Expo',
+              vsCode: 'VS Code',
+              androidStudio: 'Android Studio'
+            }
           }
         }
       }
