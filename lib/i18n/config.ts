@@ -92,10 +92,14 @@ i18n
         }
       }
     },
-    fallbackLng: 'es',
+    fallbackLng: 'es', // Asegúrate de que coincida con el idioma predeterminado
+    lng: 'es', // Idioma inicial
     interpolation: {
-      escapeValue: false
-    }
+      escapeValue: false,
+    },
+    react: {
+      useSuspense: true, // Habilita Suspense para manejar la carga de traducciones
+    },
   });
 
 export default i18n;
