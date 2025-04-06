@@ -95,7 +95,7 @@ export function Skills() {
         { name: t('skills.tools.ubuntu'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Ubuntu-Dark.svg" },
         { name: t('skills.tools.postman'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg" },
         { name: t('skills.tools.yarn'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Yarn-Dark.svg" },
-        { name: t('skills.tools.expo'), icon: "https://seeklogo.com/images/E/expo-logo-01BB2BCFC3-seeklogo.com.png" },
+        { name: t('skills.tools.expo'), icon: "https://www.svgrepo.com/show/353723/expo-icon.svg" },
         { name: t('skills.tools.vsCode'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/VSCode-Dark.svg" },
         { name: t('skills.tools.androidStudio'), icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/AndroidStudio-Dark.svg" }
       ]
