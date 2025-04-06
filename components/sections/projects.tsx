@@ -12,7 +12,7 @@ const projects = [
     description: "Portafolio con Next.js, TypeScript y Tailwind. Totalmente responsivo con modo claro y oscuro.",
     github: "https://github.com/Nefta11/MiPortafolioNefta",
     demo: "https://neftalivergaraportafolio.netlify.app/",
-    image: "https://via.placeholder.com/300x200",
+    image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/myprofile2.png",
     tech: [
       { name: "TypeScript", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TypeScript.svg", color: "bg-[#3178C6]/10 text-[#3178C6]" },
       { name: "TailwindCSS", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TailwindCSS-Dark.svg", color: "bg-[#38B2AC]/10 text-[#38B2AC]" },
