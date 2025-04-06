@@ -282,7 +282,7 @@ i18n
         }
       }
     },
-    fallbackLng: 'es', // Asegúrate de que coincida con el idioma predeterminado
+    fallbackLng: 'en', // Asegúrate de que coincida con el idioma predeterminado
     lng: 'es', // Idioma inicial
     interpolation: {
       escapeValue: false,
