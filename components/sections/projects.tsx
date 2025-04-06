@@ -8,8 +8,25 @@ import { Github, ExternalLink } from 'lucide-react'
 
 const projects = [
   {
+    title: "Mi Portafolio Web 2 Mejorado",
+    description: "Portafolio con Next.js, TypeScript y Tailwind. Totalmente responsivo con modo claro y oscuro.",
+    github: "https://github.com/Nefta11/MiPortafolioNefta",
+    demo: "https://neftalivergaraportafolio.netlify.app/",
+    image: "https://via.placeholder.com/300x200",
+    tech: [
+      { name: "TypeScript", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TypeScript.svg", color: "bg-[#3178C6]/10 text-[#3178C6]" },
+      { name: "TailwindCSS", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TailwindCSS-Dark.svg", color: "bg-[#38B2AC]/10 text-[#38B2AC]" },
+      { name: "Next.js", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NextJS-Dark.svg", color: "bg-[#000000]/10 text-[#000000] dark:text-[#FFFFFF]" },
+      { name: "CSS", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg", color: "bg-[#1572B6]/10 text-[#1572B6]" },
+      { name: "JavaScript", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg", color: "bg-[#F7DF1E]/10 text-[#F7DF1E]" },
+      { name: "NPM", icon: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg", color: "bg-[#CB3837]/10 text-[#CB3837]" },
+      { name: "Git", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg", color: "bg-[#F05032]/10 text-[#F05032]" }
+    ]
+  }
+  ,
+  {
     title: "Adventy Travels",
-    description: "Desarrollé una plataforma web orientada a la promoción y comercialización de servicios turísticos. Utilicé React junto con Vite como herramienta de bundling, siguiendo una arquitectura modular centrada en funcionalidades para optimizar la escalabilidad y el mantenimiento a largo plazo. Implementé EmailJS para la gestión de correos electrónicos, permitiendo que los asesores de ventas se comuniquen de manera eficiente con los usuarios interesados en solicitar cotizaciones personalizadas. El sitio es multilingüe, soportando español, inglés y francés, gracias a la integración de i18next para la internacionalización. Además, se incorporaron bibliotecas como React Icons y SweetAlert para mejorar la interfaz y la experiencia del usuario. El diseño es completamente responsivo, adaptándose de manera fluida a una variedad de dispositivos móviles y plataformas. También se establece una conexión con una tienda en línea para la adquisición de paquetes turísticos.",
+    description: "Plataforma web para servicios turísticos con soporte multilingüe y diseño responsivo.",
     github: "https://github.com/Nefta11/GoodTravel-web",
     demo: "https://adventytravels.com/",
     image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/adventy1.png",
@@ -20,13 +37,13 @@ const projects = [
       { name: "React", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Light.svg", color: "bg-[#61DAFB]/10 text-[#61DAFB]" },
       { name: "Vite", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Vite-Dark.svg", color: "bg-[#646CFF]/10 text-[#646CFF]" },
       { name: "Git", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg", color: "bg-[#F05032]/10 text-[#F05032]" },
-      { name: "NPM", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NPM-Light.svg", color: "bg-[#CB3837]/10 text-[#CB3837]" },
+      { name: "NPM", icon: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg", color: "bg-[#CB3837]/10 text-[#CB3837]" },
       { name: "Vercel", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Vercel-Dark.svg", color: "bg-[#000000]/10 text-[#000000] dark:text-[#FFFFFF]" }
     ]
   },
   {
     title: "XicoNemi",
-    description: "Como parte del proyecto XicoNemi, mi responsabilidad fue desarrollar la aplicación móvil utilizando React Native y ejecutada en Expo. La app está diseñada para promover el turismo en Xicotepec, ofreciendo itinerarios personalizados, rutas de senderismo y ciclismo, además de destacar actividades de ecoturismo. Implementé Redux para la gestión del estado global y React Navigation para la navegación entre pantallas, siguiendo una estructura modular basada en funcionalidades y dominios para garantizar escalabilidad y fácil mantenimiento. La aplicación consume APIs desarrolladas en nuestro backend para funciones clave como registro, inicio de sesión y obtención de datos turísticos, entre otras muchas más.",
+    description: "App móvil para turismo en Xicotepec con itinerarios y rutas personalizadas.",
     github: "https://github.com/XicoNemi/mobile-app/tree/dev",
     demo: "https://appetize.io/app/b_5f55tlbgu24j5n25i5fpfgbrcm?device=pixel7&osVersion=13.0",
     image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/XicoNemi1.png",
@@ -44,7 +61,7 @@ const projects = [
   },
   {
     title: "Ultra Trail",
-    description: "Desarrollo del módulo de métodos de pago y compra de boletos para la aplicación Ultra Trail, enfocada en carreras de montaña. Maqueté y desarrollé interfaces en React Native ejecutadas en Expo, creando pantallas para métodos de pago, compra de boletos, carrito de compras y visualización de boletos. Stripe fue implementado para la gestión segura de pagos. Node.js se utilizó para la configuración del entorno y ejecución del código JavaScript en React. Desarrollé y consumí APIs con Slim PHP para manejar transacciones y la gestión de boletos, utilizando MySQL para el almacenamiento de datos.",
+    description: "Módulo de pagos y boletos para app de carreras de montaña.",
     github: "https://github.com/UltraHuauchi",
     image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrailBoletos.png",
     tech: [
@@ -61,21 +78,21 @@ const projects = [
   },
   {
     title: "My Portafolio",
-    description: "Desarrollé una página web estática utilizando Astro 4.0, basándome en un breve curso impartido por un desarrollador conocido. Para el diseño, empleé Tailwind CSS y un poco de JavaScript para algunas funcionalidades adicionales. Las capturas de pantalla fueron tomadas con la plataforma Shots y los iconos fueron extraídos de SVGL.app. El sitio web se desplegó en Netfly y es completamente responsivo.",
+    description: "Página estática con Astro y Tailwind, desplegada en Netlify.",
     github: "https://github.com/Nefta11/my-portfolio",
-    demo: "https://neftaliportafolio.vercel.app/",
+    demo: "https://neftaliportafoliodev.netlify.app/",
     image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/PortafolioSiuu.png",
     tech: [
       { name: "JavaScript", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg", color: "bg-[#F7DF1E]/10 text-[#F7DF1E]" },
       { name: "Astro", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Astro.svg", color: "bg-[#FF5D01]/10 text-[#FF5D01]" },
       { name: "Tailwind", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TailwindCSS-Dark.svg", color: "bg-[#38B2AC]/10 text-[#38B2AC]" },
-      { name: "NPM", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NPM-Light.svg", color: "bg-[#CB3837]/10 text-[#CB3837]" },
+      { name: "NPM", icon: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg", color: "bg-[#CB3837]/10 text-[#CB3837]" },
       { name: "Git", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg", color: "bg-[#F05032]/10 text-[#F05032]" }
     ]
   },
   {
     title: "MusicForYou",
-    description: "Desarrollo de una aplicación móvil llamada MusicForYou enfocada en la creación y gestión de contenido musical. Utilicé React Native para desarrollar la interfaz y Slim PHP para crear una API que gestiona las operaciones del backend. Los usuarios pueden registrarse y autenticarse, lo que les permite crear y gestionar sus propias canciones, letras, artistas y géneros musicales. La aplicación ofrece una experiencia intuitiva con navegación sencilla, facilitando la gestión musical personalizada.",
+    description: "App móvil para gestionar contenido musical con React Native y Slim PHP.",
     github: "https://github.com/Nefta11/AppMusicForYou",
     image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/MusicForYou.png",
     tech: [
@@ -89,7 +106,7 @@ const projects = [
   },
   {
     title: "Gran Bazar",
-    description: "Desarrollé esta aplicación web como parte de un proyecto integrador universitario, utilizando tecnologías como PHP, HTML, CSS, JavaScript y MySQL para el desarrollo tanto del frontend como del backend, sin el uso de frameworks. Además, diseñé y configuré la base de datos, incorporando procedimientos almacenados, funciones y vistas para la simulación y gestión de los datos. La aplicación incluye funcionalidades clave como el registro y acceso de usuarios, un carrito de compras para la visualización de productos seleccionados, y la opción de cerrar sesión de manera segura",
+    description: "App web para compras con PHP, HTML, CSS, JS y MySQL.",
     github: "https://github.com/Nefta11/Gran_Bazar",
     image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/GranBazar.png",
     tech: [
@@ -128,12 +145,12 @@ export function Projects() {
                 <div className="relative p-[2px] rounded-lg overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 animate-gradient"></div>
                   <Card className="relative overflow-hidden h-full flex flex-col bg-background">
-                    <div className="relative h-48 overflow-hidden group">
+                    <div className="relative h-48 w-full overflow-hidden group rounded-md border border-border">
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        className="object-contain transition-transform duration-500 group-hover:scale-110"
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     </div>
                     <CardContent className="p-6 flex-grow">
