@@ -132,6 +132,15 @@ i18n
                 direction: 'right'
               }
             ]
+          },
+          projects: {
+            title: 'Featured Projects',
+            viewCode: 'View Code',
+            viewDemo: 'View Demo',
+            descriptions: {
+              portfolio: 'Portfolio built with Next.js, TypeScript, and Tailwind. Fully responsive with light and dark modes.',
+              ultraTrail: 'Payment and ticket module for a mountain race app.'
+            }
           }
         }
       },
@@ -260,6 +269,15 @@ i18n
                 direction: 'right'
               }
             ]
+          },
+          projects: {
+            title: 'Proyectos Destacados',
+            viewCode: 'Ver Código',
+            viewDemo: 'Ver Demo',
+            descriptions: {
+              portfolio: 'Portafolio con Next.js, TypeScript y Tailwind. Totalmente responsivo con modo claro y oscuro.',
+              ultraTrail: 'Módulo de pagos y boletos para app de carreras de montaña.'
+            }
           }
         }
       }
