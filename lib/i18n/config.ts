@@ -86,6 +86,52 @@ i18n
               vsCode: 'VS Code',
               androidStudio: 'Android Studio'
             }
+          },
+          experience: {
+            title: 'Work Experience',
+            description: 'My professional journey in software development, where each project has contributed to my growth as a developer.',
+            items: [
+              {
+                period: 'January 2025 - Present',
+                title: 'Frontend Web Developer',
+                company: 'Grupo Comercial Bracarda',
+                project: 'Adventy Travels Tourism Website',
+                description: 'Development and maintenance of a tourism web platform using React and Vite',
+                direction: 'right'
+              },
+              {
+                period: 'September 2024 - Present',
+                title: 'Mobile Frontend Developer',
+                company: 'XicoNemi by DreamTeam',
+                project: 'XicoNemi App',
+                description: 'Development of a tourism mobile app using React Native and Expo',
+                direction: 'left'
+              },
+              {
+                period: 'April 2024 - August 2024',
+                title: 'Junior Fullstack Developer',
+                company: 'Startdust S.A DE C.V',
+                project: 'Ultra Trail App',
+                description: 'Implementation of payment systems and ticket management',
+                direction: 'right'
+              },
+              {
+                period: 'October 2023 - November 2023',
+                title: 'Developer',
+                company: 'Universidad Tecnológica de Xicotepec de Juárez',
+                project: 'Api-ti & Api-IOT',
+                description: 'Development of APIs for IoT projects and data management',
+                direction: 'left'
+              },
+              {
+                period: 'May 2023 - August 2023',
+                title: 'Developer',
+                company: 'Universidad Tecnológica de Xicotepec de Juárez',
+                project: 'Gran_Bazar (E-commerce)',
+                description: 'Development of an e-commerce platform using PHP and MySQL',
+                direction: 'right'
+              }
+            ]
           }
         }
       },
@@ -168,6 +214,52 @@ i18n
               vsCode: 'VS Code',
               androidStudio: 'Android Studio'
             }
+          },
+          experience: {
+            title: 'Experiencia Laboral',
+            description: 'Mi trayectoria profesional en el desarrollo de software, donde cada proyecto ha contribuido a mi crecimiento como desarrollador.',
+            items: [
+              {
+                period: 'Enero 2025 - Actualidad',
+                title: 'Desarrollador Frontend Web',
+                company: 'Grupo Comercial Bracarda',
+                project: 'Sitio web de servicios turísticos Adventy Travels',
+                description: 'Desarrollo y mantenimiento de plataforma web turística con React y Vite',
+                direction: 'right'
+              },
+              {
+                period: 'Septiembre 2024 - Actualidad',
+                title: 'Desarrollador Móvil Frontend',
+                company: 'XicoNemi by DreamTeam',
+                project: 'App XicoNemi',
+                description: 'Desarrollo de aplicación móvil turística con React Native y Expo',
+                direction: 'left'
+              },
+              {
+                period: 'Abril 2024 - Agosto 2024',
+                title: 'Desarrollador Fullstack Jr.',
+                company: 'Startdust S.A DE C.V',
+                project: 'App Ultra Trail',
+                description: 'Implementación de sistema de pagos y gestión de boletos',
+                direction: 'right'
+              },
+              {
+                period: 'Octubre 2023 - Noviembre 2023',
+                title: 'Desarrollador',
+                company: 'Universidad Tecnológica de Xicotepec de Juárez',
+                project: 'Api-ti & Api-IOT',
+                description: 'Desarrollo de APIs para proyectos de IoT y gestión de datos',
+                direction: 'left'
+              },
+              {
+                period: 'Mayo 2023 - Agosto 2023',
+                title: 'Desarrollador',
+                company: 'Universidad Tecnológica de Xicotepec de Juárez',
+                project: 'Gran_Bazar (E-commerce)',
+                description: 'Desarrollo de plataforma e-commerce con PHP y MySQL',
+                direction: 'right'
+              }
+            ]
           }
         }
       }

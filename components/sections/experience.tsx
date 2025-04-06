@@ -3,49 +3,7 @@
 import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Calendar, Building2, Briefcase, ArrowRight } from 'lucide-react'
-
-const experiences = [
-  {
-    period: "Enero 2025-actualidad",
-    title: "Desarrollador Frontend Web",
-    company: "Grupo Comercial Bracarda",
-    project: "Sitio web de servicios turísticos Adventy Travel",
-    description: "Desarrollo y mantenimiento de plataforma web turística con React y Vite",
-    direction: "right"
-  },
-  {
-    period: "Septiembre 2024-actualidad",
-    title: "Desarrollador Móvil Frontend",
-    company: "XicoNemi by DreamTeam",
-    project: "App XicoNemi",
-    description: "Desarrollo de aplicación móvil turística con React Native y Expo",
-    direction: "left"
-  },
-  {
-    period: "Abril 2024-Agosto 2024",
-    title: "Desarrollador Fullstack Jr.",
-    company: "Startdust S.A DE C.V",
-    project: "App Ultra Trail",
-    description: "Implementación de sistema de pagos y gestión de boletos",
-    direction: "right"
-  },
-  {
-    period: "Octubre 2023-Noviembre 2023",
-    title: "Desarrollador",
-    company: "Universidad Tecnológica de Xicotepec de Juárez",
-    project: "Api-ti & Api-IOT",
-    description: "Desarrollo de APIs para proyectos de IoT y gestión de datos",
-    direction: "left"
-  },
-  {
-    period: "Mayo 2023-Agosto 2023",
-    title: "Desarrollador",
-    company: "Universidad Tecnológica de Xicotepec de Juárez",
-    project: "Gran_Bazar (E-commerce)",
-    description: "Desarrollo de plataforma e-commerce con PHP y MySQL",
-    direction: "right"
-  }
-]
+import { useTranslation } from 'react-i18next'
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -76,6 +34,17 @@ const cardVariants = {
 }
 
 function Experience() {
+  const { t } = useTranslation()
+
+  const experiences = t('experience.items', { returnObjects: true }) as {
+    period: string
+    title: string
+    company: string
+    project: string
+    description: string
+    direction: string
+  }[]
+
   return (
     <section id="experience" className="section-padding">
       <div className="max-w-5xl mx-auto">
@@ -94,11 +63,10 @@ function Experience() {
             className="text-center"
           >
             <h2 className="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600">
-              Experiencia Laboral
+              {t('experience.title')}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Mi trayectoria profesional en el desarrollo de software, donde cada proyecto
-              ha contribuido a mi crecimiento como desarrollador.
+              {t('experience.description')}
             </p>
           </motion.div>
           
