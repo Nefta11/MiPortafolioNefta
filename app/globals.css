@@ -1,81 +1,152 @@
+/**
+ * globals.css
+ * 
+ * Este archivo contiene los estilos globales de la aplicación, incluyendo:
+ * - Configuración de Tailwind CSS
+ * - Sistema de temas (claro/oscuro)
+ * - Variables CSS personalizadas
+ * - Animaciones
+ * - Utilidades de diseño
+ */
+
+/* Importación de las capas principales de Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/**
+ * SISTEMA DE TEMAS
+ * 
+ * Define variables CSS para el modo claro (predeterminado) y oscuro
+ * Usa el formato HSL para facilitar la manipulación de colores
+ */
 @layer base {
   :root {
+    /* Colores de fondo y primer plano */
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
+
+    /* Componentes de tarjeta */
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
+
+    /* Componentes emergentes */
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
+
+    /* Colores primarios */
     --primary: 240 5.9% 10%;
     --primary-foreground: 0 0% 98%;
+
+    /* Colores secundarios */
     --secondary: 240 4.8% 95.9%;
     --secondary-foreground: 240 5.9% 10%;
+
+    /* Colores atenuados */
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
+
+    /* Colores de acento */
     --accent: 240 4.8% 95.9%;
     --accent-foreground: 240 5.9% 10%;
+
+    /* Colores destructivos */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
+
+    /* Utilidades de interfaz */
     --border: 240 5.9% 90%;
     --input: 240 5.9% 90%;
     --ring: 240 5.9% 10%;
+
+    /* Bordes redondeados */
     --radius: 0.5rem;
   }
 
+  /**
+   * Tema oscuro
+   * Activo cuando el elemento HTML tiene la clase 'dark'
+   */
   .dark {
     --background: 224 71% 4%;
     --foreground: 213 31% 91%;
+
     --card: 224 71% 4%;
     --card-foreground: 213 31% 91%;
+
     --popover: 224 71% 4%;
     --popover-foreground: 213 31% 91%;
+
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 1.2%;
+
     --secondary: 222.2 47.4% 11.2%;
     --secondary-foreground: 210 40% 98%;
+
     --muted: 223 47% 11%;
     --muted-foreground: 215.4 16.3% 56.9%;
+
     --accent: 216 34% 17%;
     --accent-foreground: 210 40% 98%;
+
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
+
     --border: 216 34% 17%;
     --input: 216 34% 17%;
     --ring: 216 34% 17%;
   }
 }
 
+/**
+ * ESTILOS BASE
+ * 
+ * Aplicados a todos los elementos
+ */
 @layer base {
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
 }
 
-.section-padding {
-  @apply py-20 px-4 md:px-6 lg:px-8;
+/**
+ * UTILIDADES PERSONALIZADAS
+ * 
+ * Clases de utilidad reutilizables para facilitar el diseño
+ */
+@layer utilities {
+
+  /* Espaciado de sección estándar */
+  .section-padding {
+    @apply py-20 px-4 md:px-6 lg:px-8;
+  }
+
+  /* Efecto de máscara con gradiente para desvanecimiento */
+  .mask-gradient-all-sides {
+    mask-image: linear-gradient(to bottom,
+        transparent 0%,
+        black 10%,
+        black 90%,
+        transparent 100%);
+  }
 }
 
-.mask-gradient-all-sides {
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0%,
-    black 10%,
-    black 90%,
-    transparent 100%
-  );
-}
+/**
+ * ANIMACIONES
+ * 
+ * Definiciones de animaciones reutilizables
+ */
 
+/* Animación de desplazamiento horizontal */
 @keyframes scroll {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(calc(-50% - 1rem));
   }
@@ -85,13 +156,16 @@
   animation: scroll var(--animation-duration, 20s) linear infinite;
 }
 
+/* Animación de gradiente */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
