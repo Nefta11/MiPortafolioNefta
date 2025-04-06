@@ -4,9 +4,17 @@ import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
+import { useEffect, useState } from 'react'
 
 export function About() {
   const { t } = useTranslation();
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
 
   return (
     <section id="about" className="section-padding">

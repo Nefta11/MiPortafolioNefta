@@ -228,16 +228,11 @@ export function Hero() {
                 className="p-4 font-mono text-sm"
               >
                 <TypewriterText text={`const Desarrollador = {
-  nombre: "Neftalí Arturo",
-  rol: "Desarrollador Full Stack Jr.",
-  ubicación: "Zihuateutla y Xicotepec, Puebla, México",
-  tecnologías: [
-    "React", "React Native",
-    "MySQL", "Express",
-    "JavaScript", "HTML", "CSS",
-    "Git", "Python"
-  ],
-  pasión: "Transformar ideas en soluciones tecnológicas"
+  nombre: "${t('developer.name')}",
+  rol: "${t('developer.role')}",
+  ubicación: "${t('developer.location')}",
+  tecnologías: ${JSON.stringify(t('developer.technologies', { returnObjects: true }))},
+  pasión: "${t('developer.passion')}"
 }`} />
               </motion.div>
             </div>

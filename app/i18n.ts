@@ -11,7 +11,11 @@ export default async function initTranslations(locale: string) {
     .use(resourcesToBackend((language: string) => import(`../lib/i18n/locales/${language}.json`)))
     .init({
       ...i18nConfig,
-      lng: locale
+      lng: locale, // Asegúrate de que el idioma inicial se pase correctamente
+      fallbackLng: 'es', // Idioma predeterminado
+      react: {
+        useSuspense: false, // Desactiva el suspense para evitar problemas de hidratación
+      },
     });
 
   return i18nInstance;

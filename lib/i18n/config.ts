@@ -46,6 +46,18 @@ i18n
               'Agile methodologies: SCRUM'
             ],
             closing: 'As a Junior Full Stack Developer, I constantly stay updated with the latest trends in software development and enjoy creating innovative technological solutions that solve real-world problems.'
+          },
+          developer: {
+            name: 'Neftalí Arturo',
+            role: 'Junior Full Stack Developer',
+            location: 'Zihuateutla and Xicotepec, Puebla, Mexico',
+            technologies: [
+              'React', 'React Native',
+              'MySQL', 'Express',
+              'JavaScript', 'HTML', 'CSS',
+              'Git', 'Python'
+            ],
+            passion: 'Transforming ideas into technological solutions'
           }
         }
       },
@@ -88,14 +100,29 @@ i18n
               'Metodologías ágiles: SCRUM'
             ],
             closing: 'Como Desarrollador Full Stack Jr., me mantengo constantemente actualizado con las últimas tendencias en desarrollo de software y disfruto creando soluciones tecnológicas innovadoras que resuelvan problemas reales.'
+          },
+          developer: {
+            name: 'Neftalí Arturo',
+            role: 'Desarrollador Full Stack Jr.',
+            location: 'Zihuateutla y Xicotepec, Puebla, México',
+            technologies: [
+              'React', 'React Native',
+              'MySQL', 'Express',
+              'JavaScript', 'HTML', 'CSS',
+              'Git', 'Python'
+            ],
+            passion: 'Transformar ideas en soluciones tecnológicas'
           }
         }
       }
     },
-    fallbackLng: 'es',
+    fallbackLng: 'es', // Asegúrate de que el idioma predeterminado esté configurado
     interpolation: {
-      escapeValue: false
-    }
+      escapeValue: false,
+    },
+    react: {
+      useSuspense: false, // Desactiva el suspense para evitar problemas de hidratación
+    },
   });
 
 export default i18n;
