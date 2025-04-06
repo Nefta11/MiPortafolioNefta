@@ -3,8 +3,11 @@
 import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import Image from 'next/image'
+import { useTranslation } from 'react-i18next'
 
 export function About() {
+  const { t } = useTranslation();
+
   return (
     <section id="about" className="section-padding">
       <div className="max-w-7xl mx-auto">
@@ -15,7 +18,7 @@ export function About() {
           viewport={{ once: true }}
         >
           <h2 className="text-3xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">
-            Sobre mí
+            {t('about.title')}
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
             <div className="flex items-center justify-center">
@@ -34,16 +37,16 @@ export function About() {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 animate-gradient"></div>
                 <Card className="relative bg-background">
                   <CardContent className="p-4">
-                    <h3 className="text-lg font-semibold mb-3">Formación Académica</h3>
+                    <h3 className="text-lg font-semibold mb-3">{t('about.academicFormation')}</h3>
                     <ul className="space-y-3">
                       <li>
-                        <p className="font-medium text-sm">Ingeniería en Desarrollo y Gestión de Software</p>
-                        <p className="text-sm text-muted-foreground">En curso</p>
+                        <p className="font-medium text-sm">{t('about.degree1')}</p>
+                        <p className="text-sm text-muted-foreground">{t('about.degree1Status')}</p>
                       </li>
                       <li>
-                        <p className="font-medium text-sm">TSU en Tecnologías de la Información</p>
-                        <p className="text-sm text-muted-foreground">Área Desarrollo de Software Multiplataforma</p>
-                        <p className="text-sm text-muted-foreground">Completado</p>
+                        <p className="font-medium text-sm">{t('about.degree2')}</p>
+                        <p className="text-sm text-muted-foreground">{t('about.degree2Area')}</p>
+                        <p className="text-sm text-muted-foreground">{t('about.degree2Status')}</p>
                       </li>
                     </ul>
                   </CardContent>
@@ -54,28 +57,17 @@ export function About() {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 animate-gradient"></div>
                 <Card className="relative bg-background">
                   <CardContent className="p-4">
-                    <h3 className="text-lg font-semibold mb-3">Perfil Profesional</h3>
+                    <h3 className="text-lg font-semibold mb-3">{t('about.professionalProfile')}</h3>
                     <div className="space-y-3 text-sm text-muted-foreground">
-                      <p>
-                        Hola, soy <span className="font-semibold text-foreground">Neftalí Arturo Hernández Vergara</span>, pero puedes llamarme Neft o Nefta. Mi primer contacto con la tecnología fue a los 18 años, cuando empecé a aprender sobre reparación de PCs, instalación de sistemas operativos y creación de blogs. Aunque estudié Mantenimiento Industrial, decidí cambiar de rumbo hacia la programación, un área que me apasiona.
-                      </p>
-                      <p>
-                        Recientemente terminé el <span className="font-semibold text-foreground">Técnico Superior Universitario en Tecnologías de la Información, área Desarrollo de Software Multiplataforma</span> y ahora estoy cursando la Ingeniería en Desarrollo y Gestión de Software.
-                      </p>
-                      <p>
-                        Durante mis estudios y experiencia profesional, he desarrollado habilidades en:
-                      </p>
+                      <p>{t('about.introduction', { name: 'Neftalí Arturo Hernández Vergara' })}</p>
+                      <p>{t('about.studies', { degree: t('about.degree2'), currentDegree: t('about.degree1') })}</p>
+                      <p>{t('about.skillsIntro')}</p>
                       <ul className="list-disc list-inside space-y-1.5">
-                        <li>Bases de datos: PostgreSQL, MySQL, MongoDB</li>
-                        <li>Desarrollo web: HTML, CSS, JavaScript, React</li>
-                        <li>Backend: Node.js (Express), PHP (Slim, Laravel)</li>
-                        <li>Desarrollo móvil: React Native, Android Studio</li>
-                        <li>Control de versiones: Git & GitHub</li>
-                        <li>Metodologías ágiles: SCRUM</li>
+                        {(t('about.skills', { returnObjects: true }) as string[]).map((skill: string, index: number) => (
+                          <li key={index}>{skill}</li>
+                        ))}
                       </ul>
-                      <p>
-                        Como Desarrollador Full Stack Jr., me mantengo constantemente actualizado con las últimas tendencias en desarrollo de software y disfruto creando soluciones tecnológicas innovadoras que resuelvan problemas reales.
-                      </p>
+                      <p>{t('about.closing')}</p>
                     </div>
                   </CardContent>
                 </Card>

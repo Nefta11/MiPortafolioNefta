@@ -92,7 +92,7 @@ export function Hero() {
                   {t('hero.role')}
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-lg">
-                  Técnico Superior Universitario en Tecnologías de la Información área Desarrollo de Software Multiplataforma
+                  {t('hero.degree')}
                 </p>
                 <p className="text-lg text-muted-foreground max-w-lg">
                   {t('hero.description')}
