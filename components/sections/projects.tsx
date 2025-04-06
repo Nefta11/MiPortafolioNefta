@@ -71,7 +71,7 @@ export function Projects() {
         { name: "React Native", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg", color: "bg-[#61DAFB]/10 text-[#61DAFB]" },
         { name: "Node.js", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NodeJS-Dark.svg", color: "bg-[#339933]/10 text-[#339933]" },
         { name: "MySQL", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MySQL-Dark.svg", color: "bg-[#4479A1]/10 text-[#4479A1]" },
-        { name: "Stripe", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Stripe-Light.svg", color: "bg-[#008CDD]/10 text-[#008CDD]" },
+        { name: "Stripe", icon: "https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg", color: "bg-[#008CDD]/10 text-[#008CDD]" },
         { name: "Expo", icon: "https://seeklogo.com/images/E/expo-logo-01BB2BCFC3-seeklogo.com.png", color: "bg-[#000020]/10 text-[#000020] dark:text-[#FFFFFF]" },
         { name: "Postman", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg", color: "bg-[#FF6C37]/10 text-[#FF6C37]" },
         { name: "PHP", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PHP-Dark.svg", color: "bg-[#777BB4]/10 text-[#777BB4]" },
