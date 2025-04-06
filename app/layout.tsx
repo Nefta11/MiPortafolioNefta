@@ -25,7 +25,6 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-          suppressHydrationWarning
         >
           <div className="flex min-h-screen flex-col">
             <Navbar />
