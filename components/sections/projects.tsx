@@ -48,7 +48,7 @@ export function Projects() {
       title: "XicoNemi",
       description: "App móvil para turismo en Xicotepec con itinerarios y rutas personalizadas.",
       github: "https://github.com/XicoNemi/mobile-app",
-      demo: "https://appetize.io/app/b_5f55tlbgu24j5n25i5fpfgbrcm?device=pixel7&osVersion=13.0",
+      demo: "https://appetize.io/app/b_5zzebzaui7cj4lldpew5hw2i2i?device=pixel7&osVersion=13.0&toolbar=true",
       image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/XicoNemi.png",
       tech: [
         { name: "React Native", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg", color: "bg-[#61DAFB]/10 text-[#61DAFB]" },
