@@ -47,7 +47,7 @@ export function Projects() {
     {
       title: "XicoNemi",
       description: "App móvil para turismo en Xicotepec con itinerarios y rutas personalizadas.",
-      github: "https://github.com/XicoNemi/mobile-app/tree/dev",
+      github: "https://github.com/XicoNemi/mobile-app",
       demo: "https://appetize.io/app/b_5f55tlbgu24j5n25i5fpfgbrcm?device=pixel7&osVersion=13.0",
       image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/XicoNemi.png",
       tech: [
