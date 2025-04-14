@@ -1,4 +1,4 @@
-# Mi Portafolio - Nefta
+# Mi Portafolio - Nefta 
 
 ¡Bienvenido a mi portafolio personal! Este proyecto está diseñado para mostrar mis habilidades, experiencia y proyectos destacados como desarrollador Full Stack Jr.
 
