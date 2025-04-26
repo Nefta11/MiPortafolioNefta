@@ -230,7 +230,7 @@ export function Hero() {
                 <TypewriterText text={`const Desarrollador = {
   nombre: "Neftalí Arturo",
   rol: "Desarrollador Full Stack Jr.",
-  ubicación: "Zihuateutla y Xicotepec, Puebla, México",
+  ubicación: "Zihuateutla/Xicotepec, Puebla, México",
   tecnologías: [
     "React", "React Native",
     "MySQL", "Express",
