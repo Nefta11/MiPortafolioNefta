@@ -210,41 +210,47 @@ export function Projects() {
                     </div>
                   </motion.div>
                 </DialogTrigger>
-                <DialogContent className="max-w-2xl">
+                <DialogContent className="w-full max-w-2xl sm:max-w-2xl p-2 sm:p-6 rounded-lg overflow-y-auto max-h-[90vh] sm:max-h-[80vh]">
                   <DialogHeader>
-                    <DialogTitle className="text-2xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">{project.title}</DialogTitle>
-                    <DialogDescription>
-                      <div className="mb-4">
-                        <Image src={project.image} alt={project.title} width={600} height={300} className="rounded-lg shadow-lg mx-auto mb-4 object-cover" />
-                        <p className="text-base text-muted-foreground mb-2 text-center">{project.description}</p>
-                        <div className="flex flex-wrap justify-center gap-2 mb-4">
-                          {project.tech.map((tech, i) => (
-                            <div
-                              key={i}
-                              className={`flex items-center gap-1.5 px-3 py-2 rounded-full ${tech.color} border border-border/50 shadow-sm`}
-                            >
-                              <img src={tech.icon} alt={tech.name} className="w-5 h-5" />
-                              <span className="text-xs font-semibold">{tech.name}</span>
-                            </div>
-                          ))}
-                        </div>
-                        <div className="flex justify-center gap-4 mt-4">
-                          <Button variant="outline" asChild>
-                            <a href={project.github} target="_blank" rel="noopener noreferrer" title={t('projects.viewCode')}>
-                              <Github className="h-5 w-5 mr-2" /> {t('projects.viewCode')}
+                    <DialogTitle className="text-xl sm:text-2xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 text-center">
+                      {project.title}
+                    </DialogTitle>
+                  </DialogHeader>
+                  <DialogDescription asChild>
+                    <div className="mb-4 flex flex-col items-center">
+                      <div className="w-full flex justify-center">
+                        <Image src={project.image} alt={project.title} width={600} height={300} className="rounded-lg shadow-lg mx-auto mb-4 object-cover w-full max-w-xs sm:max-w-lg h-40 sm:h-64" />
+                      </div>
+                      <p className="text-sm sm:text-base text-muted-foreground mb-2 text-center whitespace-pre-line">
+                        {project.description}
+                      </p>
+                      <div className="flex flex-wrap justify-center gap-2 mb-4">
+                        {project.tech.map((tech, i) => (
+                          <div
+                            key={i}
+                            className={`flex items-center gap-1.5 px-2 py-1 sm:px-3 sm:py-2 rounded-full ${tech.color} border border-border/50 shadow-sm`}
+                          >
+                            <img src={tech.icon} alt={tech.name} className="w-4 h-4 sm:w-5 sm:h-5" />
+                            <span className="text-xs sm:text-sm font-semibold">{tech.name}</span>
+                          </div>
+                        ))}
+                      </div>
+                      <div className="flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 mt-4 w-full">
+                        <Button variant="outline" asChild className="w-full sm:w-auto">
+                          <a href={project.github} target="_blank" rel="noopener noreferrer" title={t('projects.viewCode')}>
+                            <Github className="h-5 w-5 mr-2" /> {t('projects.viewCode')}
+                          </a>
+                        </Button>
+                        {project.demo && (
+                          <Button variant="outline" asChild className="w-full sm:w-auto">
+                            <a href={project.demo} target="_blank" rel="noopener noreferrer" title={t('projects.viewDemo')}>
+                              <ExternalLink className="h-5 w-5 mr-2" /> {t('projects.viewDemo')}
                             </a>
                           </Button>
-                          {project.demo && (
-                            <Button variant="outline" asChild>
-                              <a href={project.demo} target="_blank" rel="noopener noreferrer" title={t('projects.viewDemo')}>
-                                <ExternalLink className="h-5 w-5 mr-2" /> {t('projects.viewDemo')}
-                              </a>
-                            </Button>
-                          )}
-                        </div>
+                        )}
                       </div>
-                    </DialogDescription>
-                  </DialogHeader>
+                    </div>
+                  </DialogDescription>
                   <DialogFooter>
                     <DialogClose asChild>
                       <Button variant="secondary" className="w-full mt-2">Cerrar</Button>
