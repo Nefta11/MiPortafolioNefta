@@ -13,6 +13,23 @@ export function Projects() {
 
   const projects = [
     {
+      title: "Adventy Travels",
+      description: "Plataforma web para servicios turísticos con soporte multilingüe y diseño responsivo.",
+      github: "https://github.com/Nefta11/GoodTravel-web",
+      demo: "https://adventytravels.com/",
+      image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/AdventyTravels.png",
+      tech: [
+        { name: "HTML", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg", color: "bg-[#E34F26]/10 text-[#E34F26]" },
+        { name: "CSS", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg", color: "bg-[#1572B6]/10 text-[#1572B6]" },
+        { name: "JavaScript", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg", color: "bg-[#F7DF1E]/10 text-[#F7DF1E]" },
+        { name: "React", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Light.svg", color: "bg-[#61DAFB]/10 text-[#61DAFB]" },
+        { name: "Vite", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Vite-Dark.svg", color: "bg-[#646CFF]/10 text-[#646CFF]" },
+        { name: "Git", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg", color: "bg-[#F05032]/10 text-[#F05032]" },
+        { name: "NPM", icon: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg", color: "bg-[#CB3837]/10 text-[#CB3837]" },
+        { name: "Vercel", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Vercel-Dark.svg", color: "bg-[#000000]/10 text-[#000000] dark:text-[#FFFFFF]" }
+      ]
+    },
+    {
       title: "Wallet Mate App",
       description: "Aplicación móvil para la gestión de gastos y presupuestos personales. Contiene una sección de educación financiera, modo oscuro/claro y permite exportar tus datos a Excel.",
       github: "https://github.com/Nefta11/WalletMate",
@@ -42,23 +59,6 @@ export function Projects() {
         { name: "JavaScript", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg", color: "bg-[#F7DF1E]/10 text-[#F7DF1E]" },
         { name: "NPM", icon: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg", color: "bg-[#CB3837]/10 text-[#CB3837]" },
         { name: "Git", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg", color: "bg-[#F05032]/10 text-[#F05032]" }
-      ]
-    },
-    {
-      title: "Adventy Travels",
-      description: "Plataforma web para servicios turísticos con soporte multilingüe y diseño responsivo.",
-      github: "https://github.com/Nefta11/GoodTravel-web",
-      demo: "https://adventytravels.com/",
-      image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/AdventyTravels.png",
-      tech: [
-        { name: "HTML", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg", color: "bg-[#E34F26]/10 text-[#E34F26]" },
-        { name: "CSS", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg", color: "bg-[#1572B6]/10 text-[#1572B6]" },
-        { name: "JavaScript", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/JavaScript.svg", color: "bg-[#F7DF1E]/10 text-[#F7DF1E]" },
-        { name: "React", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Light.svg", color: "bg-[#61DAFB]/10 text-[#61DAFB]" },
-        { name: "Vite", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Vite-Dark.svg", color: "bg-[#646CFF]/10 text-[#646CFF]" },
-        { name: "Git", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg", color: "bg-[#F05032]/10 text-[#F05032]" },
-        { name: "NPM", icon: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg", color: "bg-[#CB3837]/10 text-[#CB3837]" },
-        { name: "Vercel", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Vercel-Dark.svg", color: "bg-[#000000]/10 text-[#000000] dark:text-[#FFFFFF]" }
       ]
     },
     {
