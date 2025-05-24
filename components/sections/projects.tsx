@@ -7,14 +7,26 @@ import { Button } from '@/components/ui/button'
 import { Github, ExternalLink } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import { title } from 'node:process'
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogFooter,
+  DialogClose
+} from '@/components/ui/dialog'
+import { useState } from 'react'
 
 export function Projects() {
   const { t } = useTranslation()
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const projects = [
     {
       title: "Adventy Travels",
-      description: "Plataforma web para servicios turísticos con soporte multilingüe y diseño responsivo.",
+      description: `Plataforma web para servicios turísticos con soporte multilingüe y diseño responsivo.\n\nCaracterísticas principales:\n- Panel de administración para agencias y usuarios.\n- Integración de pagos y reservas.\n- Soporte para múltiples idiomas y monedas.\n- Despliegue en Vercel y optimización SEO.\n\nRol: Fullstack Developer (React, Vite, Node.js, Vercel)`,
       github: "https://github.com/Nefta11/GoodTravel-web",
       demo: "https://adventytravels.com/",
       image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/AdventyTravels.png",
@@ -31,7 +43,7 @@ export function Projects() {
     },
     {
       title: "Wallet Mate App",
-      description: "Aplicación móvil para la gestión de gastos y presupuestos personales. Contiene una sección de educación financiera, modo oscuro/claro y permite exportar tus datos a Excel.",
+      description: `Aplicación móvil para la gestión de gastos y presupuestos personales.\n\nCaracterísticas principales:\n- Registro y categorización de gastos e ingresos.\n- Exportación de datos a Excel.\n- Modo oscuro/claro.\n- Sección de educación financiera interactiva.\n- Notificaciones y recordatorios.\n\nRol: Mobile Developer (React Native, Expo, Node.js)`,
       github: "https://github.com/Nefta11/WalletMate",
       demo: "https://appetize.io/app/android/com.nefta11.walletmate?device=pixel7&osVersion=13.0&toolbar=true",
       image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/walletmate.png",
@@ -47,7 +59,7 @@ export function Projects() {
     ,
     {
       title: "Mi Portafolio Web 2 Mejorado",
-      description: t('projects.descriptions.portfolio'),
+      description: `${t('projects.descriptions.portfolio')}\n\nCaracterísticas principales:\n- Diseño moderno y responsivo.\n- Modo claro/oscuro.\n- Animaciones con Framer Motion.\n- Sección de proyectos interactiva con modales.\n- Despliegue en Netlify.\n\nRol: Frontend Developer (Next.js, TypeScript, TailwindCSS)` ,
       github: "https://github.com/Nefta11/MiPortafolioNefta",
       demo: "https://neftalivergaraportafolio.netlify.app/",
       image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/myprofile2.png",
@@ -63,7 +75,7 @@ export function Projects() {
     },
     {
       title: "XicoNemi",
-      description: "App móvil para turismo en Xicotepec con itinerarios y rutas personalizadas.",
+      description: `App móvil para turismo en Xicotepec con itinerarios y rutas personalizadas.\n\nCaracterísticas principales:\n- Generación de rutas turísticas personalizadas.\n- Mapa interactivo y geolocalización.\n- Panel de administración para negocios locales.\n- Integración con bases de datos y notificaciones push.\n\nRol: Mobile Developer (React Native, Redux, Node.js, Expo)` ,
       github: "https://github.com/XicoNemi/mobile-app",
       demo: "https://appetize.io/app/b_5zzebzaui7cj4lldpew5hw2i2i?device=pixel7&osVersion=13.0&toolbar=true",
       image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/XicoNemi.png",
@@ -81,7 +93,7 @@ export function Projects() {
     },
     {
       title: "Ultra Trail",
-      description: t('projects.descriptions.ultraTrail'),
+      description: `${t('projects.descriptions.ultraTrail')}\n\nCaracterísticas principales:\n- Módulo de pagos con Stripe.\n- Generación y validación de boletos digitales.\n- Panel de administración para organizadores.\n- Integración con backend en Node.js y PHP.\n\nRol: Fullstack Developer (React Native, Node.js, PHP, Stripe)` ,
       github: "https://github.com/UltraHuauchi",
       image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrailBoletos.png",
       tech: [
@@ -98,7 +110,7 @@ export function Projects() {
     },
     {
       title: "My Portafolio",
-      description: "Página estática con Astro y Tailwind, desplegada en Netlify.",
+      description: `Página estática con Astro y Tailwind, desplegada en Netlify.\n\nCaracterísticas principales:\n- Diseño minimalista y rápido.\n- Sección de proyectos y contacto.\n- Despliegue automático con GitHub Actions.\n\nRol: Frontend Developer (Astro, TailwindCSS, JavaScript)` ,
       github: "https://github.com/Nefta11/my-portfolio",
       demo: "https://neftaliportafoliodev.netlify.app/",
       image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/PortafolioSiuu.png",
@@ -112,7 +124,7 @@ export function Projects() {
     },
     {
       title: "Gran Bazar",
-      description: "App web para compras con PHP, HTML, CSS, JS y MySQL.",
+      description: `App web para compras con PHP, HTML, CSS, JS y MySQL.\n\nCaracterísticas principales:\n- Carrito de compras y gestión de productos.\n- Panel de administración para ventas y stock.\n- Autenticación de usuarios y roles.\n- Reportes de ventas y exportación de datos.\n\nRol: Fullstack Developer (PHP, MySQL, JavaScript, HTML, CSS)` ,
       github: "https://github.com/Nefta11/Gran_Bazar",
       image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/GranBazar.png",
       tech: [
@@ -139,63 +151,107 @@ export function Projects() {
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="group"
-              >
-                <div className="relative p-[2px] rounded-lg overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">
-                  <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 animate-gradient"></div>
-                  <Card className="relative overflow-hidden h-full flex flex-col bg-background">
-                    <div className="relative h-48 w-full overflow-hidden group rounded-md border border-border">
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
-                      />
-                    </div>
-                    <CardContent className="p-6 flex-grow">
-                      <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                      <p className="text-muted-foreground mb-4 line-clamp-3">{project.description}</p>
-                      <div className="flex flex-wrap gap-2">
-                        {project.tech.map((tech, i) => (
-                          <div
-                            key={i}
-                            className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-full ${tech.color} border border-border/50 transition-colors duration-300 hover:border-border`}
-                          >
-                            <img
-                              src={tech.icon}
-                              alt={tech.name}
-                              className="w-4 h-4"
-                            />
-                            <span className="text-xs font-medium">{tech.name}</span>
+              <Dialog key={index} open={openIndex === index} onOpenChange={(open) => setOpenIndex(open ? index : null)}>
+                <DialogTrigger asChild>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    viewport={{ once: true }}
+                    className="group cursor-pointer"
+                  >
+                    <div className="relative p-[2px] rounded-lg overflow-hidden bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400 animate-gradient"></div>
+                      <Card className="relative overflow-hidden h-full flex flex-col bg-background">
+                        <div className="relative h-48 w-full overflow-hidden group rounded-md border border-border">
+                          <Image
+                            src={project.image}
+                            alt={project.title}
+                            fill
+                            className="object-cover transition-transform duration-500 group-hover:scale-110"
+                          />
+                        </div>
+                        <CardContent className="p-6 flex-grow">
+                          <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                          <p className="text-muted-foreground mb-4 line-clamp-3">{project.description}</p>
+                          <div className="flex flex-wrap gap-2">
+                            {project.tech.map((tech, i) => (
+                              <div
+                                key={i}
+                                className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-full ${tech.color} border border-border/50 transition-colors duration-300 hover:border-border`}
+                              >
+                                <img
+                                  src={tech.icon}
+                                  alt={tech.name}
+                                  className="w-4 h-4"
+                                />
+                                <span className="text-xs font-medium">{tech.name}</span>
+                              </div>
+                            ))}
                           </div>
-                        ))}
-                      </div>
-                    </CardContent>
-                    <CardFooter className="p-6 pt-0">
-                      <div className="flex gap-4">
-                        <Button variant="outline" size="icon" asChild>
-                          <a href={project.github} target="_blank" rel="noopener noreferrer" title={t('projects.viewCode')}>
-                            <Github className="h-5 w-5" />
-                          </a>
-                        </Button>
-                        {project.demo && (
-                          <Button variant="outline" size="icon" asChild>
-                            <a href={project.demo} target="_blank" rel="noopener noreferrer" title={t('projects.viewDemo')}>
-                              <ExternalLink className="h-5 w-5" />
+                        </CardContent>
+                        <CardFooter className="p-6 pt-0">
+                          <div className="flex gap-4">
+                            <Button variant="outline" size="icon" asChild>
+                              <a href={project.github} target="_blank" rel="noopener noreferrer" title={t('projects.viewCode')}>
+                                <Github className="h-5 w-5" />
+                              </a>
+                            </Button>
+                            {project.demo && (
+                              <Button variant="outline" size="icon" asChild>
+                                <a href={project.demo} target="_blank" rel="noopener noreferrer" title={t('projects.viewDemo')}>
+                                  <ExternalLink className="h-5 w-5" />
+                                </a>
+                              </Button>
+                            )}
+                          </div>
+                        </CardFooter>
+                      </Card>
+                    </div>
+                  </motion.div>
+                </DialogTrigger>
+                <DialogContent className="max-w-2xl">
+                  <DialogHeader>
+                    <DialogTitle className="text-2xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">{project.title}</DialogTitle>
+                    <DialogDescription>
+                      <div className="mb-4">
+                        <Image src={project.image} alt={project.title} width={600} height={300} className="rounded-lg shadow-lg mx-auto mb-4 object-cover" />
+                        <p className="text-base text-muted-foreground mb-2 text-center">{project.description}</p>
+                        <div className="flex flex-wrap justify-center gap-2 mb-4">
+                          {project.tech.map((tech, i) => (
+                            <div
+                              key={i}
+                              className={`flex items-center gap-1.5 px-3 py-2 rounded-full ${tech.color} border border-border/50 shadow-sm`}
+                            >
+                              <img src={tech.icon} alt={tech.name} className="w-5 h-5" />
+                              <span className="text-xs font-semibold">{tech.name}</span>
+                            </div>
+                          ))}
+                        </div>
+                        <div className="flex justify-center gap-4 mt-4">
+                          <Button variant="outline" asChild>
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" title={t('projects.viewCode')}>
+                              <Github className="h-5 w-5 mr-2" /> {t('projects.viewCode')}
                             </a>
                           </Button>
-                        )}
+                          {project.demo && (
+                            <Button variant="outline" asChild>
+                              <a href={project.demo} target="_blank" rel="noopener noreferrer" title={t('projects.viewDemo')}>
+                                <ExternalLink className="h-5 w-5 mr-2" /> {t('projects.viewDemo')}
+                              </a>
+                            </Button>
+                          )}
+                        </div>
                       </div>
-                    </CardFooter>
-                  </Card>
-                </div>
-              </motion.div>
+                    </DialogDescription>
+                  </DialogHeader>
+                  <DialogFooter>
+                    <DialogClose asChild>
+                      <Button variant="secondary" className="w-full mt-2">Cerrar</Button>
+                    </DialogClose>
+                  </DialogFooter>
+                </DialogContent>
+              </Dialog>
             ))}
           </div>
         </motion.div>
