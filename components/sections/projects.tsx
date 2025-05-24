@@ -13,6 +13,22 @@ export function Projects() {
 
   const projects = [
     {
+      title: "Wallet Mate App",
+      description: "Aplicación móvil para la gestión de gastos y presupuestos personales. Contiene una sección de educación financiera, modo oscuro/claro y permite exportar tus datos a Excel.",
+      github: "https://github.com/Nefta11/WalletMate",
+      demo: "https://appetize.io/app/android/com.nefta11.walletmate?device=pixel7&osVersion=13.0&toolbar=true",
+      image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/walletmate.png",
+      tech: [
+        { name: "React Native", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg", color: "bg-[#61DAFB]/10 text-[#61DAFB]" },
+        { name: "Node.js", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NodeJS-Dark.svg", color: "bg-[#339933]/10 text-[#339933]" },
+        { name: "Expo", icon: "https://seeklogo.com/images/E/expo-logo-01BB2BCFC3-seeklogo.com.png", color: "bg-[#000020]/10 text-[#000020] dark:text-[#FFFFFF]" },
+        { name: "Git", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg", color: "bg-[#F05032]/10 text-[#F05032]" },
+        { name: "NPM", icon: "https://upload.wikimedia.org/wikipedia/commons/d/db/Npm-logo.svg", color: "bg-[#CB3837]/10 text-[#CB3837]" },
+        { name: "TypeScript", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/TypeScript.svg", color: "bg-[#3178C6]/10 text-[#3178C6]" },
+      ]
+    }
+    ,
+    {
       title: "Mi Portafolio Web 2 Mejorado",
       description: t('projects.descriptions.portfolio'),
       github: "https://github.com/Nefta11/MiPortafolioNefta",
@@ -120,12 +136,6 @@ export function Projects() {
         { name: "CSS", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg", color: "bg-[#1572B6]/10 text-[#1572B6]" },
         { name: "MySQL", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MySQL-Dark.svg", color: "bg-[#4479A1]/10 text-[#4479A1]" }
       ]
-    },
-    {
-      title:"Wallet Mate App",
-      description: "Aplicación móvil para la gestión de gastos y presupuestos personales. Contiene una sección de educación financiera, modo oscuro/claro y permite exportar tus datos a Excel.",
-      github: "https://github.com/Nefta11/WalletMate",
-      image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/WalletMate.png",
     }
   ]
 
