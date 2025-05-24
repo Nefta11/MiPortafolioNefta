@@ -6,6 +6,7 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Github, ExternalLink } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { title } from 'node:process'
 
 export function Projects() {
   const { t } = useTranslation()
@@ -119,6 +120,12 @@ export function Projects() {
         { name: "CSS", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/CSS.svg", color: "bg-[#1572B6]/10 text-[#1572B6]" },
         { name: "MySQL", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MySQL-Dark.svg", color: "bg-[#4479A1]/10 text-[#4479A1]" }
       ]
+    },
+    {
+      title:"Wallet Mate App",
+      description: "Aplicación móvil para la gestión de gastos y presupuestos personales. Contiene una sección de educación financiera, modo oscuro/claro y permite exportar tus datos a Excel.",
+      github: "https://github.com/Nefta11/WalletMate",
+      image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/WalletMate.png",
     }
   ]
 
