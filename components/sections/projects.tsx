@@ -111,20 +111,6 @@ export function Projects() {
       ]
     },
     {
-      title: "MusicForYou",
-      description: "App móvil para gestionar contenido musical con React Native y Slim PHP.",
-      github: "https://github.com/Nefta11/AppMusicForYou",
-      image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/MusicForYou.png",
-      tech: [
-        { name: "Node.js", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NodeJS-Dark.svg", color: "bg-[#339933]/10 text-[#339933]" },
-        { name: "React Native", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg", color: "bg-[#61DAFB]/10 text-[#61DAFB]" },
-        { name: "MySQL", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/MySQL-Dark.svg", color: "bg-[#4479A1]/10 text-[#4479A1]" },
-        { name: "PHP", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/PHP-Dark.svg", color: "bg-[#777BB4]/10 text-[#777BB4]" },
-        { name: "Postman", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Postman.svg", color: "bg-[#FF6C37]/10 text-[#FF6C37]" },
-        { name: "Yarn", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Yarn-Dark.svg", color: "bg-[#2C8EBB]/10 text-[#2C8EBB]" }
-      ]
-    },
-    {
       title: "Gran Bazar",
       description: "App web para compras con PHP, HTML, CSS, JS y MySQL.",
       github: "https://github.com/Nefta11/Gran_Bazar",
