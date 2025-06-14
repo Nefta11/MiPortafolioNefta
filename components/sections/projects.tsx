@@ -45,7 +45,7 @@ export function Projects() {
       title: "Wallet Mate App",
       description: `Aplicación móvil para la gestión de gastos y presupuestos personales.\n\nCaracterísticas principales:\n- Registro y categorización de gastos e ingresos.\n- Exportación de datos a Excel.\n- Modo oscuro/claro.\n- Sección de educación financiera interactiva.\n- Notificaciones y recordatorios.\n\nRol: Mobile Developer (React Native, Expo, Node.js)`,
       github: "https://github.com/Nefta11/WalletMate",
-      demo: "https://appetize.io/app/android/com.nefta11.walletmate?device=pixel7&osVersion=13.0&toolbar=true",
+      demo: "https://appetize.io/app/b_x5x7kxiy3did5ueirvmhtga7qy",
       image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/walletmate.png",
       tech: [
         { name: "React Native", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg", color: "bg-[#61DAFB]/10 text-[#61DAFB]" },
@@ -59,7 +59,7 @@ export function Projects() {
     ,
     {
       title: "Mi Portafolio Web 2 Mejorado",
-      description: `${t('projects.descriptions.portfolio')}\n\nCaracterísticas principales:\n- Diseño moderno y responsivo.\n- Modo claro/oscuro.\n- Animaciones con Framer Motion.\n- Sección de proyectos interactiva con modales.\n- Despliegue en Netlify.\n\nRol: Frontend Developer (Next.js, TypeScript, TailwindCSS)` ,
+      description: `${t('projects.descriptions.portfolio')}\n\nCaracterísticas principales:\n- Diseño moderno y responsivo.\n- Modo claro/oscuro.\n- Animaciones con Framer Motion.\n- Sección de proyectos interactiva con modales.\n- Despliegue en Netlify.\n\nRol: Frontend Developer (Next.js, TypeScript, TailwindCSS)`,
       github: "https://github.com/Nefta11/MiPortafolioNefta",
       demo: "https://neftalivergaraportafolio.netlify.app/",
       image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/myprofile2.png",
@@ -75,9 +75,9 @@ export function Projects() {
     },
     {
       title: "XicoNemi",
-      description: `App móvil para turismo en Xicotepec con itinerarios y rutas personalizadas.\n\nCaracterísticas principales:\n- Generación de rutas turísticas personalizadas.\n- Mapa interactivo y geolocalización.\n- Panel de administración para negocios locales.\n- Integración con bases de datos y notificaciones push.\n\nRol: Mobile Developer (React Native, Redux, Node.js, Expo)` ,
+      description: `App móvil para turismo en Xicotepec con itinerarios y rutas personalizadas.\n\nCaracterísticas principales:\n- Generación de rutas turísticas personalizadas.\n- Mapa interactivo y geolocalización.\n- Panel de administración para negocios locales.\n- Integración con bases de datos y notificaciones push.\n\nRol: Mobile Developer (React Native, Redux, Node.js, Expo)`,
       github: "https://github.com/XicoNemi/mobile-app",
-      demo: "https://appetize.io/app/b_5zzebzaui7cj4lldpew5hw2i2i?device=pixel7&osVersion=13.0&toolbar=true",
+      demo: "https://appetize.io/app/b_5zzebzaui7cj4lldpew5hw2i2i",
       image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/XicoNemi.png",
       tech: [
         { name: "React Native", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/React-Dark.svg", color: "bg-[#61DAFB]/10 text-[#61DAFB]" },
@@ -93,7 +93,7 @@ export function Projects() {
     },
     {
       title: "Ultra Trail",
-      description: `${t('projects.descriptions.ultraTrail')}\n\nCaracterísticas principales:\n- Módulo de pagos con Stripe.\n- Generación y validación de boletos digitales.\n- Panel de administración para organizadores.\n- Integración con backend en Node.js y PHP.\n\nRol: Fullstack Developer (React Native, Node.js, PHP, Stripe)` ,
+      description: `${t('projects.descriptions.ultraTrail')}\n\nCaracterísticas principales:\n- Módulo de pagos con Stripe.\n- Generación y validación de boletos digitales.\n- Panel de administración para organizadores.\n- Integración con backend en Node.js y PHP.\n\nRol: Fullstack Developer (React Native, Node.js, PHP, Stripe)`,
       github: "https://github.com/UltraHuauchi",
       image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/UltraTrailBoletos.png",
       tech: [
@@ -110,7 +110,7 @@ export function Projects() {
     },
     {
       title: "My Portafolio",
-      description: `Página estática con Astro y Tailwind, desplegada en Netlify.\n\nCaracterísticas principales:\n- Diseño minimalista y rápido.\n- Sección de proyectos y contacto.\n- Despliegue automático con GitHub Actions.\n\nRol: Frontend Developer (Astro, TailwindCSS, JavaScript)` ,
+      description: `Página estática con Astro y Tailwind, desplegada en Netlify.\n\nCaracterísticas principales:\n- Diseño minimalista y rápido.\n- Sección de proyectos y contacto.\n- Despliegue automático con GitHub Actions.\n\nRol: Frontend Developer (Astro, TailwindCSS, JavaScript)`,
       github: "https://github.com/Nefta11/my-portfolio",
       demo: "https://neftaliportafoliodev.netlify.app/",
       image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/refs/heads/main/public/images/projects/PortafolioSiuu.png",
@@ -124,7 +124,7 @@ export function Projects() {
     },
     {
       title: "Gran Bazar",
-      description: `App web para compras con PHP, HTML, CSS, JS y MySQL.\n\nCaracterísticas principales:\n- Carrito de compras y gestión de productos.\n- Panel de administración para ventas y stock.\n- Autenticación de usuarios y roles.\n- Reportes de ventas y exportación de datos.\n\nRol: Fullstack Developer (PHP, MySQL, JavaScript, HTML, CSS)` ,
+      description: `App web para compras con PHP, HTML, CSS, JS y MySQL.\n\nCaracterísticas principales:\n- Carrito de compras y gestión de productos.\n- Panel de administración para ventas y stock.\n- Autenticación de usuarios y roles.\n- Reportes de ventas y exportación de datos.\n\nRol: Fullstack Developer (PHP, MySQL, JavaScript, HTML, CSS)`,
       github: "https://github.com/Nefta11/Gran_Bazar",
       image: "https://raw.githubusercontent.com/Nefta11/my-portfolio/main/public/images/projects/GranBazar.png",
       tech: [
