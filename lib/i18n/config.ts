@@ -92,15 +92,23 @@ i18n
             description: 'My professional journey in software development, where each project has contributed to my growth as a developer.',
             items: [
               {
-                period: 'January 2025 - Present',
+                period: 'April 2025 - Present',
                 title: 'Frontend Web Developer',
+                company: 'Espora',
+                project: 'Enterprise Web Platforms and Policies',
+                description: 'Design and development of enterprise web platforms using React, Next.js, and Vite',
+                direction: 'left'
+              },
+              {
+                period: 'January 2025 - July 2025',
+                title: 'Fullstack Jr. Developer',
                 company: 'Grupo Comercial Bracarda',
                 project: 'Adventy Travels Tourism Website',
                 description: 'Development and maintenance of a tourism web platform using React and Vite',
                 direction: 'right'
               },
               {
-                period: 'September 2024 - Present',
+                period: 'September 2024 - April 2025',
                 title: 'Mobile Frontend Developer',
                 company: 'XicoNemi by DreamTeam',
                 project: 'XicoNemi App',
@@ -229,15 +237,24 @@ i18n
             description: 'Mi trayectoria profesional en el desarrollo de software, donde cada proyecto ha contribuido a mi crecimiento como desarrollador.',
             items: [
               {
-                period: 'Enero 2025 - Actualidad',
-                title: 'Desarrollador Frontend Web',
+                period: 'Abril 2025 - Presente',
+                title: 'Desarrollador Web Frontend',
+                company: 'Espora',
+                project: 'Plataformas Web Empresariales y politicas',
+                description: 'Diseño y desarrollo de plataformas webs empresariales con React, Next.js y Vite',
+                direction: 'left'
+
+              },
+              {
+                period: 'Enero 2025 - Julio 2025',
+                title: 'Desarrollador Fullstack Jr.',
                 company: 'Grupo Comercial Bracarda',
                 project: 'Sitio web de servicios turísticos Adventy Travels',
                 description: 'Desarrollo y mantenimiento de plataforma web turística con React y Vite',
                 direction: 'right'
               },
               {
-                period: 'Septiembre 2024 - Actualidad',
+                period: 'Septiembre 2024 - Abril 2025',
                 title: 'Desarrollador Móvil Frontend',
                 company: 'XicoNemi by DreamTeam',
                 project: 'App XicoNemi',
