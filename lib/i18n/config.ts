@@ -117,26 +117,10 @@ i18n
               },
               {
                 period: 'April 2024 - August 2024',
-                title: 'Junior Fullstack Developer',
+                title: 'Fullstack Jr. Developer',
                 company: 'Startdust S.A DE C.V',
                 project: 'Ultra Trail App',
                 description: 'Implementation of payment systems and ticket management',
-                direction: 'right'
-              },
-              {
-                period: 'October 2023 - November 2023',
-                title: 'Developer',
-                company: 'Universidad Tecnológica de Xicotepec de Juárez',
-                project: 'Api-ti & Api-IOT',
-                description: 'Development of APIs for IoT projects and data management',
-                direction: 'left'
-              },
-              {
-                period: 'May 2023 - August 2023',
-                title: 'Developer',
-                company: 'Universidad Tecnológica de Xicotepec de Juárez',
-                project: 'Gran_Bazar (E-commerce)',
-                description: 'Development of an e-commerce platform using PHP and MySQL',
                 direction: 'right'
               }
             ]
@@ -267,22 +251,6 @@ i18n
                 company: 'Startdust S.A DE C.V',
                 project: 'App Ultra Trail',
                 description: 'Implementación de sistema de pagos y gestión de boletos',
-                direction: 'right'
-              },
-              {
-                period: 'Octubre 2023 - Noviembre 2023',
-                title: 'Desarrollador',
-                company: 'Universidad Tecnológica de Xicotepec de Juárez',
-                project: 'Api-ti & Api-IOT',
-                description: 'Desarrollo de APIs para proyectos de IoT y gestión de datos',
-                direction: 'left'
-              },
-              {
-                period: 'Mayo 2023 - Agosto 2023',
-                title: 'Desarrollador',
-                company: 'Universidad Tecnológica de Xicotepec de Juárez',
-                project: 'Gran_Bazar (E-commerce)',
-                description: 'Desarrollo de plataforma e-commerce con PHP y MySQL',
                 direction: 'right'
               }
             ]
