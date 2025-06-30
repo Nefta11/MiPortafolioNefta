@@ -86,7 +86,7 @@ export function Navbar() {
             </Button>
             <Button asChild>
               <a
-                href="https://drive.google.com/uc?export=download&id=1y72lkyC15Mghicp4MLoZiEU_wEzHcwH3"
+                href="https://drive.google.com/uc?export=download&id=1m4Et3Lvfw8LG7a5m-4x9dfgioYB84Sgd"
                 download="CV_NeftaliArturoHernandezVergara"
                 className="flex items-center gap-2"
               >
@@ -149,7 +149,7 @@ export function Navbar() {
           ))}
           <Button asChild className="w-full mt-4">
             <a
-              href="https://drive.google.com/uc?export=download&id=1y72lkyC15Mghicp4MLoZiEU_wEzHcwH3"
+              href="https://drive.google.com/uc?export=download&id=1m4Et3Lvfw8LG7a5m-4x9dfgioYB84Sgd"
               download="CV_NeftaliArturoHernandezVergara"
               className="flex items-center justify-center gap-2"
             >
