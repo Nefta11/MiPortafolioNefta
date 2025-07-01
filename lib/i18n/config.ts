@@ -19,7 +19,7 @@ i18n
           },
           hero: {
             greeting: 'Hello! 👋',
-            role: 'Full Stack Jr. Developer',
+            role: 'Frontend/Backend Jr Developer',
             description: 'Creating innovative digital solutions and unique web experiences.',
             viewProjects: 'View Projects',
             aboutMe: 'About Me',
@@ -93,7 +93,7 @@ i18n
             items: [
               {
                 period: 'April 2025 - Present',
-                title: 'Frontend Web Developer',
+                title: 'Frontend Web Developer Jr.',
                 company: 'Espora',
                 project: 'Enterprise Web Platforms and Policies',
                 description: 'Design and development of enterprise web platforms using React, Next.js, and Vite',
@@ -148,7 +148,7 @@ i18n
           },
           hero: {
             greeting: '¡Hola! 👋',
-            role: 'Desarrollador Full Stack Jr.',
+            role: 'Desarrollador Frontend/Backend Jr',
             description: 'Creando soluciones digitales innovadoras y experiencias web únicas.',
             viewProjects: 'Ver Proyectos',
             aboutMe: 'Sobre Mí',
@@ -222,7 +222,7 @@ i18n
             items: [
               {
                 period: 'Abril 2025 - Presente',
-                title: 'Desarrollador Web Frontend',
+                title: 'Desarrollador Web Frontend Jr.',
                 company: 'Espora',
                 project: 'Plataformas Web Empresariales y politicas',
                 description: 'Diseño y desarrollo de plataformas webs empresariales con React, Next.js y Vite',
