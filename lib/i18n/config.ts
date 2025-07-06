@@ -94,7 +94,7 @@ i18n
               {
                 period: 'April 2025 - Present',
                 title: 'Frontend Web Developer Jr.',
-                company: 'Espora',
+                company: 'Esporadix',
                 project: 'Enterprise Web Platforms and Policies',
                 description: 'Design and development of enterprise web platforms using React, Next.js, and Vite',
                 direction: 'left'
@@ -223,7 +223,7 @@ i18n
               {
                 period: 'Abril 2025 - Presente',
                 title: 'Desarrollador Web Frontend Jr.',
-                company: 'Espora',
+                company: 'Esporadix',
                 project: 'Plataformas Web Empresariales y politicas',
                 description: 'Diseño y desarrollo de plataformas webs empresariales con React, Next.js y Vite',
                 direction: 'left'
