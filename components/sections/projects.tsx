@@ -28,7 +28,7 @@ export function Projects() {
       title: "Adventy Travels",
       description: `Plataforma web para servicios turísticos con soporte multilingüe y diseño responsivo.\n\nCaracterísticas principales:\n- Panel de administración para agencias y usuarios.\n- Integración de pagos y reservas.\n- Soporte para múltiples idiomas y monedas.\n- Despliegue en Vercel y optimización SEO.\n\nRol: Fullstack Developer (React, Vite, Node.js, Vercel)`,
       github: "https://github.com/Nefta11/GoodTravel-web",
-      demo: "https://adventytravels.com/",
+      demo: "https://adventytravels.vercel.app/",
       image: "https://raw.githubusercontent.com/Nefta11/MiPortafolioNefta/refs/heads/main/assets/AdventyTravels.png",
       tech: [
         { name: "HTML", icon: "https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/HTML.svg", color: "bg-[#E34F26]/10 text-[#E34F26]" },
