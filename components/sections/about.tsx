@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import { Suspense } from 'react';
+import { BookOpen, GraduationCap } from 'lucide-react';
 
 export function About() {
   const { t } = useTranslation();
@@ -40,15 +41,23 @@ export function About() {
                   <Card className="relative bg-background">
                     <CardContent className="p-4">
                       <h3 className="text-lg font-semibold mb-3">{t('about.academicFormation')}</h3>
-                      <ul className="space-y-3">
-                        <li>
-                          <p className="font-medium text-sm">{t('about.degree1')}</p>
-                          <p className="text-sm text-muted-foreground">{t('about.degree1Status')}</p>
+                      <ul className="space-y-4">
+                        <li className="flex items-start gap-3">
+                          <BookOpen className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
+                          <div>
+                            <p className="font-medium text-sm">{t('about.degree1')}</p>
+                            <p className="text-sm text-muted-foreground">{t('about.degree1Period')}</p>
+                            <p className="text-sm text-muted-foreground">{t('about.degree1Status')}</p>
+                          </div>
                         </li>
-                        <li>
-                          <p className="font-medium text-sm">{t('about.degree2')}</p>
-                          <p className="text-sm text-muted-foreground">{t('about.degree2Area')}</p>
-                          <p className="text-sm text-muted-foreground">{t('about.degree2Status')}</p>
+                        <li className="flex items-start gap-3">
+                          <GraduationCap className="w-5 h-5 text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
+                          <div>
+                            <p className="font-medium text-sm">{t('about.degree2')}</p>
+                            <p className="text-sm text-muted-foreground">{t('about.degree2Area')}</p>
+                            <p className="text-sm text-muted-foreground">{t('about.degree2Status')}</p>
+                            <p className="text-sm text-muted-foreground">{t('about.degree2License')}</p>
+                          </div>
                         </li>
                       </ul>
                     </CardContent>
